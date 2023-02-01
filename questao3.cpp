@@ -8,11 +8,11 @@ int main(){
 	int t = 0;
 	
 	printf("Digite a palavra: ");
-	scanf("%s\n", &palavra);
+	gets(palavra);
 	
 	for(int i = strlen(palavra)-1; i >= 0; i--){
 		palavra_invertida[t] = palavra[i];
-		t += 1;
+		t++;
 	}
 	
 	palavra_invertida [t] = '\0';
